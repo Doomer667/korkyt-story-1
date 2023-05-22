@@ -230,14 +230,12 @@ img {
 .info__image {
   width: 250px;
   height: auto;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .close-button {
-  width: 30px;
+  width: 50px;
   background: none;
-  font-weight: 700;
   color: black;
   position: absolute;
   top: 0;
@@ -245,12 +243,14 @@ img {
   display: block;
   border: none;
   margin: 5px;
-  font-size: 36px;
   cursor: pointer;
+  right: 0;
+  top: 10px;
 }
 
 .close-button__image {
   width: 100%;
+
 }
 
 .disabled {
@@ -285,9 +285,27 @@ img {
 
   display: flex;
   background-color: #fff;
-  border: 3px #eee solid;
+  border: none;
+  border-radius: 5px;
+
+  padding: 20px 30px 35px 20px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.75rem rgba(43, 43, 43, 0.3));
+
 }
 
 #modal-three .text-container, #modal-four .text-container, #modal-five .text-container {
-  background-color: pink;
+  width: 400px;
+}
+
+.modal-dialog h2 {
+  font-size: 48px;
+}
+
+.modal-dialog p {
+  font-family: arial;
+  margin-top: 5px;
+  font-size: 18px;
 }

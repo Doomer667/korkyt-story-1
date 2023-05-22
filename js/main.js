@@ -87,18 +87,18 @@ const openModal = (element, id, link, header, body) => {
 
 imageOneTrigger.onclick = () => {
   const id = 'modal-three'
-  const link = '../images/image-8.jpg'
-  const header = 'yurt'
-  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+  const link = '../images/image-7.webp'
+  const header = 'sherter'
+  const body = 'The sherter is an ancient Kazakh and ancient Turkic musical instrument with its own unique colorful sound. Traditionally, the technique of playing the presented stringed instrument is reduced to classical plucking manipulations, which allow you to get a sufficiently loud clear sound with the possibility of setting a clear rhythm.'
 
   openModal(slideFive, id, link, header, body)
 }
 
 imageTwoTrigger.onclick = () => {
   const id = 'modal-four'
-  const link = '../images/image-8.jpg'
-  const header = 'yurt'
-  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+  const link = '../images/image-9.png'
+  const header = 'dabyl'
+  const body = 'The dabyl is a large drum, the sounds of which served as a signal about the appearance of foreigners in the steppe. Rawhide skins of two bulls or camels were used for its manufacture. They were pulled together on a wooden case 20-30 cm wide, and in diameter reaching one and a half meters. The double was suspended on tripods made of poles or spears.'
 
   openModal(slideFive, id, link, header, body)
 }

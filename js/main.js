@@ -7,13 +7,14 @@ const slideFive = document.getElementById('slide-five')
 const imageOneTrigger = document.getElementById('image-one-trigger')
 const imageTwoTrigger = document.getElementById('image-two-trigger')
 const imageThreeTrigger = document.getElementById('image-three-trigger')
+let isModal = false
 
 
 const createModal = (id, image, header, body, className) => {
   const element = document.createElement('div')
   element.setAttribute('class', className)
   element.setAttribute('id', id)
-  
+
   const headerComponent = document.createElement('h2')
   headerComponent.innerText = header
   headerComponent.setAttribute('class', 'info__header')
@@ -55,6 +56,7 @@ const closeDialog = (id) => {
   const modal = document.getElementById(id)
   enableTriggers()
   modal.remove()
+  isModal = false
 }
 
 const enableTriggers = () => {
@@ -76,7 +78,7 @@ slideSixTrigger.onclick = () => {
   const link = '../images/image-8.jpg'
   const header = 'NE yurt'
   const body = 'NOT A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
-  
+
   openDialog(slideSix, id, link, header, body)
   slideSixTrigger.setAttribute('class', 'circle disabled')
 }
@@ -91,7 +93,10 @@ imageOneTrigger.onclick = () => {
   const header = 'sherter'
   const body = 'The sherter is an ancient Kazakh and ancient Turkic musical instrument with its own unique colorful sound. Traditionally, the technique of playing the presented stringed instrument is reduced to classical plucking manipulations, which allow you to get a sufficiently loud clear sound with the possibility of setting a clear rhythm.'
 
-  openModal(slideFive, id, link, header, body)
+  if (!isModal) {
+    openModal(slideFive, id, link, header, body)
+    isModal = true
+  }
 }
 
 imageTwoTrigger.onclick = () => {
@@ -100,7 +105,10 @@ imageTwoTrigger.onclick = () => {
   const header = 'dabyl'
   const body = 'The dabyl is a large drum, the sounds of which served as a signal about the appearance of foreigners in the steppe. Rawhide skins of two bulls or camels were used for its manufacture. They were pulled together on a wooden case 20-30 cm wide, and in diameter reaching one and a half meters. The double was suspended on tripods made of poles or spears.'
 
-  openModal(slideFive, id, link, header, body)
+  if (!isModal) {
+    openModal(slideFive, id, link, header, body)
+    isModal = true
+  }
 }
 
 imageThreeTrigger.onclick = () => {
@@ -109,5 +117,8 @@ imageThreeTrigger.onclick = () => {
   const header = 'yurt'
   const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
 
-  openModal(slideFive, id, link, header, body)
+  if (!isModal) {
+    openModal(slideFive, id, link, header, body)
+    isModal = true
+  }
 }

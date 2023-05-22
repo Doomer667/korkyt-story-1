@@ -1,12 +1,15 @@
 const slideTwoTrigger = document.getElementById('slide-two-trigger')
 const slideSixTrigger = document.getElementById('slide-six-trigger')
+const slideSevenTrigger = document.getElementById('slide-seven-trigger')
 const triggers = [slideTwoTrigger, slideSixTrigger]
 const slideTwo = document.getElementById('slide-two')
 const slideSix = document.getElementById('slide-six')
 const slideFive = document.getElementById('slide-five')
+const slideSeven = document.getElementById('slide-seven')
 const imageOneTrigger = document.getElementById('image-one-trigger')
 const imageTwoTrigger = document.getElementById('image-two-trigger')
 const imageThreeTrigger = document.getElementById('image-three-trigger')
+const imageFourTrigger = document.getElementById('image-four-trigger')
 let isModal = false
 
 
@@ -83,6 +86,16 @@ slideSixTrigger.onclick = () => {
   slideSixTrigger.setAttribute('class', 'circle disabled')
 }
 
+slideSevenTrigger.onclick = () => {
+  const id = 'modal-one'
+  const link = '../images/image-8.jpg'
+  const header = 'yurt'
+  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+
+  openDialog(slideSeven, id, link, header, body)
+  slideSevenTrigger.setAttribute('class', 'circle disabled')
+}
+
 const openModal = (element, id, link, header, body) => {
   element.appendChild(createModal(id, link, header, body, 'modal-dialog'))
 }
@@ -119,6 +132,18 @@ imageThreeTrigger.onclick = () => {
 
   if (!isModal) {
     openModal(slideFive, id, link, header, body)
+    isModal = true
+  }
+}
+
+imageFourTrigger.onclick = () => {
+  const id = 'modal-five'
+  const link = '../images/image-8.jpg'
+  const header = 'yurt'
+  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+
+  if (!isModal) {
+    openModal(slideSeven, id, link, header, body)
     isModal = true
   }
 }

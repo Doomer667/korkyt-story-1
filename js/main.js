@@ -1,7 +1,7 @@
 const slideTwoTrigger = document.getElementById('slide-two-trigger')
 const slideSixTrigger = document.getElementById('slide-six-trigger')
 const slideElevenTrigger = document.getElementById('slide-eleven-trigger')
-const triggers = [slideTwoTrigger, slideSixTrigger]
+const triggers = [slideTwoTrigger, slideSixTrigger, slideElevenTrigger]
 const slideTwo = document.getElementById('slide-two')
 const slideSix = document.getElementById('slide-six')
 const slideFive = document.getElementById('slide-five')

@@ -327,7 +327,6 @@
 
 .slide-thirteen .bodytext-13 {
   font-size: 128px;
-  line-height: 100%;
 }
 
 .slide-thirteen .bodytext-13 p{
@@ -402,33 +401,9 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  //border: black 1px solid; 
+  border: black 1px solid; 
 
   cursor: pointer;
-
-  box-shadow:
-  0 0 60px 10px #fff,  /* inner white */
-  0 0 100px 20px #f0f, /* middle magenta */
-  0 0 140px 30px #0ff; /* outer cyan */
-
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  from {
-    box-shadow:
-    0 0 60px 10px #fff,  /* inner white */
-    0 0 100px 30px #f0f, /* middle magenta */
-    0 0 140px 60px #0ff; /* outer cyan */
-  }
-  to {
-    box-shadow:
-    0 0 60px 10px #fff,  /* inner white */
-    0 0 100px 20px rgb(86, 84, 149), /* middle magenta */
-    0 0 140px 30px rgb(221, 190, 53); /* outer cyan */
-  }
 }
 
 .info {

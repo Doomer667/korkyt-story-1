@@ -1,6 +1,6 @@
 const slideTwoTrigger = document.getElementById('slide-two-trigger')
 const slideSixTrigger = document.getElementById('slide-six-trigger')
-const slideElevenTrigger = document.getElementById('slide-eleven-trigger')
+
 const triggers = [slideTwoTrigger, slideSixTrigger]
 const slideTwo = document.getElementById('slide-two')
 const slideSix = document.getElementById('slide-six')
@@ -78,23 +78,15 @@ slideTwoTrigger.onclick = () => {
 
 slideSixTrigger.onclick = () => {
   const id = 'modal-two'
-  const link = '../images/image-8.jpg'
-  const header = 'NE yurt'
-  const body = 'NOT A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+  const link = '../images/image_18.jpg'
+  const header = 'mazar'
+  const body = 'Perhaps the most important architectural monuments of medieval Kazakhstan are mazars - mausoleums, or «dwellings of the dead». They are the final resting places of mighty rulers and great poets and scholars of the past.'
 
   openDialog(slideSix, id, link, header, body)
   slideSixTrigger.setAttribute('class', 'circle disabled')
 }
 
-slideElevenTrigger.onclick = () => {
-  const id = 'modal-one'
-  const link = '../images/image-8.jpg'
-  const header = 'yurt'
-  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
 
-  openDialog(slideEleven, id, link, header, body)
-  slideElevenTrigger.setAttribute('class', 'circle disabled')
-}
 
 const openModal = (element, id, link, header, body) => {
   element.appendChild(createModal(id, link, header, body, 'modal-dialog'))
@@ -126,9 +118,9 @@ imageTwoTrigger.onclick = () => {
 
 imageThreeTrigger.onclick = () => {
   const id = 'modal-five'
-  const link = '../images/image-8.jpg'
-  const header = 'yurt'
-  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+  const link = '../images/image-17.jpg'
+  const header = 'sybyzgy'
+  const body = 'The sybyzgy is a Kyrgyz sideblown flute traditionally played by shepherds and horse herders, made from apricot wood or the wood of mountain bushes. Length 600–650 mm. The sybyzgy sound scale is estimated from 4 to 6 holes.'
 
   if (!isModal) {
     openModal(slideFive, id, link, header, body)
@@ -138,9 +130,9 @@ imageThreeTrigger.onclick = () => {
 
 imageFourTrigger.onclick = () => {
   const id = 'modal-six'
-  const link = '../images/image-8.jpg'
-  const header = 'yurt'
-  const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
+  const link = '../images/image-19.jpg'
+  const header = 'kobyz'
+  const body = 'Kobyz was created by a great baksy and narrator of the steppes Korkyt ata, who lived in the VIII-X centuries. The preservation of folk ideas about the role of Korkyt as a wiseman and philosopher who contributed to the miracle of human culture - music and a musical instrument is invaluable. Kobyz is an instrument of an amazing shape and an extraordinary richness of timbre. Today we will talk about the most ancient, magical, mysterious, sacred instrument.'
 
   if (!isModal) {
     openModal(slideEleven, id, link, header, body)

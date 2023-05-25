@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 1100vw;
+  width: 1500rem;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

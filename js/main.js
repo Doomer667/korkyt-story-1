@@ -33,7 +33,7 @@ const createModal = (id, image, header, body, className, triggerElement) => {
 
   const closeButton = document.createElement('button')
   const buttonImage = document.createElement('img')
-  buttonImage.setAttribute('src', '../icons/close.png')
+  buttonImage.setAttribute('src', 'icons/close.png')
   buttonImage.setAttribute('class', 'close-button__image')
   closeButton.setAttribute('class', 'close-button')
   closeButton.setAttribute('id', 'close-button')
@@ -56,7 +56,7 @@ const closeDialog = (id, triggerElement) => {
 
 slideTwoTrigger.onclick = () => {
   const id = 'modal-one'
-  const link = '../images/image-8.jpg'
+  const link = 'images/image-8.jpg'
   const header = 'yurt'
   const body = 'A yurt (from the Turkic languages) or ger (Mongolian) is a portable, round tent covered and insulated with skins or felt and traditionally used as a dwelling by several distinct nomadic groups in the steppes and mountains of Inner Asia. The structure consists of a flexible angled assembly or latticework of wood or bamboo for walls, a door frame, ribs (poles, rafters), and a wheel (crown, compression ring) possibly steam-bent as a roof. The roof structure is sometimes self-supporting, but large yurts may have interior posts supporting the crown.'
 
@@ -66,7 +66,7 @@ slideTwoTrigger.onclick = () => {
 
 slideSixTrigger.onclick = () => {
   const id = 'modal-two'
-  const link = '../images/image_18.jpg'
+  const link = 'images/image_18.jpg'
   const header = 'mazar'
   const body = 'Perhaps the most important architectural monuments of medieval Kazakhstan are mazars - mausoleums, or «dwellings of the dead». They are the final resting places of mighty rulers and great poets and scholars of the past.'
 
@@ -76,7 +76,7 @@ slideSixTrigger.onclick = () => {
 
 slideElevenTrigger.onclick = () => {
   const id = 'modal-three'
-  const link = '../images/image-19.jpg'
+  const link = 'images/image-19.jpg'
   const header = 'kobyz'
   const body = 'Kobyz was created by a great baksy and narrator of the steppes Korkyt ata, who lived in the VIII-X centuries. The preservation of folk ideas about the role of Korkyt as a wiseman and philosopher who contributed to the miracle of human culture - music and a musical instrument is invaluable. Kobyz is an instrument of an amazing shape and an extraordinary richness of timbre. Today we will talk about the most ancient, magical, mysterious, sacred instrument.'
 
@@ -90,7 +90,7 @@ const openModal = (element, id, link, header, body, triggerElement) => {
 
 imageOneTrigger.onclick = () => {
   const id = 'modal-four'
-  const link = '../images/image-7.webp'
+  const link = 'images/image-7.webp'
   const header = 'sherter'
   const body = 'The sherter is an ancient Kazakh and ancient Turkic musical instrument with its own unique colorful sound. Traditionally, the technique of playing the presented stringed instrument is reduced to classical plucking manipulations, which allow you to get a sufficiently loud clear sound with the possibility of setting a clear rhythm.'
 
@@ -100,7 +100,7 @@ imageOneTrigger.onclick = () => {
 
 imageTwoTrigger.onclick = () => {
   const id = 'modal-five'
-  const link = '../images/image-9.png'
+  const link = 'images/image-9.png'
   const header = 'dabyl'
   const body = 'The dabyl is a large drum, the sounds of which served as a signal about the appearance of foreigners in the steppe. Rawhide skins of two bulls or camels were used for its manufacture. They were pulled together on a wooden case 20-30 cm wide, and in diameter reaching one and a half meters. The double was suspended on tripods made of poles or spears.'
 
@@ -111,7 +111,7 @@ imageTwoTrigger.onclick = () => {
 
 imageThreeTrigger.onclick = () => {
   const id = 'modal-six'
-  const link = '../images/image-17.jpg'
+  const link = 'images/image-17.jpg'
   const header = 'sybyzgy'
   const body = 'The sybyzgy is a Kyrgyz sideblown flute traditionally played by shepherds and horse herders, made from apricot wood or the wood of mountain bushes. Length 600–650 mm. The sybyzgy sound scale is estimated from 4 to 6 holes.'
 
